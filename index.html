@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <meta content="#f7f4e5" name="theme-color"/>
+  <title>
+   Calora &mdash; &pcy;&icy;&tcy;&acy;&ncy;&icy;&iecy; &pcy;&ocy;&dcy; &kcy;&ocy;&ncy;&tcy;&rcy;&ocy;&lcy;&iecy;&mcy;
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="app">
+   <section class="page auth-page active" id="loginPage">
+    <div class="auth-card">
+     <div class="brand">
+      <svg aria-hidden="true" class="brand-mark" viewbox="0 0 48 48">
+       <path d="M24 43C10 40 2 29 5 17 7 8 16 4 23 10 30 1 43 8 44 19 45 31 36 40 24 43Z" fill="#718763">
+       </path>
+       <path d="M14 17c4-5 10-5 13-2M20 29c5 5 12 4 16-1" fill="none" stroke="#f7f4e5" stroke-linecap="round" stroke-width="2.7">
+       </path>
+      </svg>
+      Calora
+     </div>
+     <h1>
+      &Scy; &vcy;&ocy;&zcy;&vcy;&rcy;&acy;&shchcy;&iecy;&ncy;&icy;&iecy;&mcy;!
+     </h1>
+     <p class="subtitle">
+      &Vcy;&ocy;&jcy;&dcy;&icy;, &chcy;&tcy;&ocy;&bcy;&ycy; &pcy;&rcy;&ocy;&dcy;&ocy;&lcy;&zhcy;&icy;&tcy;&softcy; &scy;&lcy;&iecy;&dcy;&icy;&tcy;&softcy; &zcy;&acy; &scy;&vcy;&ocy;&icy;&mcy; &pcy;&icy;&tcy;&acy;&ncy;&icy;&iecy;&mcy;
+     </p>
+     <form id="loginForm">
+      <label class="field">
+       <span>
+        &Ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&acy;&yacy; &pcy;&ocy;&chcy;&tcy;&acy;
+       </span>
+       <input placeholder="name@example.com" required="" type="email"/>
+      </label>
+      <label class="field">
+       <span>
+        &Pcy;&acy;&rcy;&ocy;&lcy;&softcy;
+       </span>
+       <input minlength="4" placeholder="&Vcy;&vcy;&iecy;&dcy;&icy;&tcy;&iecy; &pcy;&acy;&rcy;&ocy;&lcy;&softcy;" required="" type="password"/>
+      </label>
+      <button class="primary-btn" type="submit">
+       &Vcy;&ocy;&jcy;&tcy;&icy;
+      </button>
+     </form>
+     <p class="auth-switch">
+      &IEcy;&shchcy;&iocy; &ncy;&iecy;&tcy; &acy;&kcy;&kcy;&acy;&ucy;&ncy;&tcy;&acy;?
+      <button class="text-btn" data-page="registerPage">
+       &Scy;&ocy;&zcy;&dcy;&acy;&tcy;&softcy; &acy;&kcy;&kcy;&acy;&ucy;&ncy;&tcy;
+      </button>
+     </p>
+     <p class="auth-note">
+      &Tcy;&vcy;&ocy;&jcy; &iecy;&zhcy;&iecy;&dcy;&ncy;&iecy;&vcy;&ncy;&ycy;&jcy; &pcy;&ocy;&mcy;&ocy;&shchcy;&ncy;&icy;&kcy; &vcy; &scy;&bcy;&acy;&lcy;&acy;&ncy;&scy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&ncy;&ocy;&mcy; &pcy;&icy;&tcy;&acy;&ncy;&icy;&icy;
+     </p>
+    </div>
+   </section>
+   <section class="page auth-page" id="registerPage">
+    <div class="auth-card">
+     <div class="brand">
+      <svg aria-hidden="true" class="brand-mark" viewbox="0 0 48 48">
+       <path d="M24 43C10 40 2 29 5 17 7 8 16 4 23 10 30 1 43 8 44 19 45 31 36 40 24 43Z" fill="#718763">
+       </path>
+       <path d="M14 17c4-5 10-5 13-2M20 29c5 5 12 4 16-1" fill="none" stroke="#f7f4e5" stroke-linecap="round" stroke-width="2.7">
+       </path>
+      </svg>
+      Calora
+     </div>
+     <h1>
+      &Scy;&ocy;&zcy;&dcy;&acy;&tcy;&softcy; &acy;&kcy;&kcy;&acy;&ucy;&ncy;&tcy;
+     </h1>
+     <p class="subtitle">
+      &Ncy;&acy;&chcy;&ncy;&icy; &scy;&vcy;&ocy;&jcy; &pcy;&ucy;&tcy;&softcy; &kcy; &pcy;&ocy;&lcy;&iecy;&zcy;&ncy;&ycy;&mcy; &pcy;&rcy;&icy;&vcy;&ycy;&chcy;&kcy;&acy;&mcy;
+     </p>
+     <form id="registerForm">
+      <label class="field">
+       <span>
+        &Icy;&mcy;&yacy;
+       </span>
+       <input placeholder="&Kcy;&acy;&kcy; &kcy; &tcy;&iecy;&bcy;&iecy; &ocy;&bcy;&rcy;&acy;&shchcy;&acy;&tcy;&softcy;&scy;&yacy;?" required="" type="text"/>
+      </label>
+      <label class="field">
+       <span>
+        &Ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&acy;&yacy; &pcy;&ocy;&chcy;&tcy;&acy;
+       </span>
+       <input placeholder="name@example.com" required="" type="email"/>
+      </label>
+      <label class="field">
+       <span>
+        &Pcy;&acy;&rcy;&ocy;&lcy;&softcy;
+       </span>
+       <input minlength="4" placeholder="&Ncy;&iecy; &mcy;&iecy;&ncy;&iecy;&iecy; 4 &scy;&icy;&mcy;&vcy;&ocy;&lcy;&ocy;&vcy;" required="" type="password"/>
+      </label>
+      <label class="field">
+       <span>
+        &TScy;&iecy;&lcy;&softcy; &pcy;&ocy; &kcy;&acy;&lcy;&ocy;&rcy;&icy;&yacy;&mcy; &vcy; &dcy;&iecy;&ncy;&softcy;
+       </span>
+       <input max="10000" min="500" required="" type="number" value="2100"/>
+      </label>
+      <button class="primary-btn" type="submit">
+       &Zcy;&acy;&rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&icy;&rcy;&ocy;&vcy;&acy;&tcy;&softcy;&scy;&yacy;
+      </button>
+     </form>
+     <p class="auth-switch">
+      &Ucy;&zhcy;&iecy; &iecy;&scy;&tcy;&softcy; &acy;&kcy;&kcy;&acy;&ucy;&ncy;&tcy;?
+      <button class="text-btn" data-page="loginPage">
+       &Vcy;&ocy;&jcy;&tcy;&icy;
+      </button>
+     </p>
+    </div>
+   </section>
+   <section class="page" id="dashboardPage">
+    <main class="main-shell">
+     <header class="topbar">
+      <div class="brand">
+       <svg aria-hidden="true" class="brand-mark" viewbox="0 0 48 48">
+        <path d="M24 43C10 40 2 29 5 17 7 8 16 4 23 10 30 1 43 8 44 19 45 31 36 40 24 43Z" fill="#718763">
+        </path>
+        <path d="M14 17c4-5 10-5 13-2M20 29c5 5 12 4 16-1" fill="none" stroke="#f7f4e5" stroke-linecap="round" stroke-width="2.7">
+        </path>
+       </svg>
+       Calora
+      </div>
+      <div class="top-actions">
+       <span class="hello" id="helloText">
+        &KHcy;&ocy;&rcy;&ocy;&shcy;&iecy;&gcy;&ocy; &dcy;&ncy;&yacy;!
+       </span>
+       <button aria-label="&Vcy;&ycy;&jcy;&tcy;&icy;" class="icon-btn" id="logoutBtn">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+         <path d="M10 17l5-5-5-5M15 12H3">
+         </path>
+         <path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6">
+         </path>
+        </svg>
+       </button>
+      </div>
+     </header>
+     <h1 class="page-title">
+      &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy; &pcy;&acy;&ncy;&iecy;&lcy;&softcy;
+     </h1>
+     <p class="page-lead">
+      &Tcy;&vcy;&ocy;&jcy; &bcy;&acy;&lcy;&acy;&ncy;&scy; &ncy;&acy; &scy;&iecy;&gcy;&ocy;&dcy;&ncy;&yacy;. &Mcy;&acy;&lcy;&iecy;&ncy;&softcy;&kcy;&icy;&iecy; &shcy;&acy;&gcy;&icy; &mdash; &bcy;&ocy;&lcy;&softcy;&shcy;&icy;&iecy; &rcy;&iecy;&zcy;&ucy;&lcy;&softcy;&tcy;&acy;&tcy;&ycy;.
+     </p>
+     <div class="dashboard-grid">
+      <section class="panel calorie-panel">
+       <div class="ring" id="calorieRing">
+        <div class="ring-inner">
+         <small>
+          &Ocy;&scy;&tcy;&acy;&lcy;&ocy;&scy;&softcy;
+         </small>
+         <strong id="remainingCalories">
+          550 &kcy;&kcy;&acy;&lcy;
+         </strong>
+         <span>
+          &icy;&zcy;
+          <b id="goalText">
+           2100
+          </b>
+          &kcy;&kcy;&acy;&lcy;
+         </span>
+        </div>
+       </div>
+       <div class="calorie-copy">
+        <h2>
+         &Dcy;&ncy;&iecy;&vcy;&ncy;&acy;&yacy; &ncy;&ocy;&rcy;&mcy;&acy;
+        </h2>
+        <p>
+         &Scy;&lcy;&iecy;&dcy;&icy; &zcy;&acy; &ecy;&ncy;&iecy;&rcy;&gcy;&icy;&iecy;&jcy; &icy; &vcy;&ycy;&bcy;&icy;&rcy;&acy;&jcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;, &kcy;&ocy;&tcy;&ocy;&rcy;&ycy;&iecy; &pcy;&ocy;&mcy;&ocy;&gcy;&acy;&yucy;&tcy; &tcy;&iecy;&bcy;&iecy; &chcy;&ucy;&vcy;&scy;&tcy;&vcy;&ocy;&vcy;&acy;&tcy;&softcy; &scy;&iecy;&bcy;&yacy; &khcy;&ocy;&rcy;&ocy;&shcy;&ocy;.
+        </p>
+        <span class="tag" id="calorieTag">
+         74% &tscy;&iecy;&lcy;&icy; &vcy;&ycy;&pcy;&ocy;&lcy;&ncy;&iecy;&ncy;&ocy;
+        </span>
+       </div>
+      </section>
+      <section class="panel stats-panel">
+       <h2>
+        &Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&iecy;&lcy;&icy; &zcy;&acy; &dcy;&iecy;&ncy;&softcy;
+       </h2>
+       <div class="stats-grid">
+        <div class="stat-card">
+         <div class="stat-icon blue">
+          ☀
+         </div>
+         <div>
+          <div class="stat-label">
+           &Bcy;&iecy;&lcy;&kcy;&icy;
+          </div>
+          <div class="stat-value" id="proteinStat">
+           75 &gcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 120 &gcy;
+          </div>
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="stat-icon">
+          🍴
+         </div>
+         <div>
+          <div class="stat-label">
+           &Kcy;&acy;&lcy;&ocy;&rcy;&icy;&jcy;&ncy;&ocy;&scy;&tcy;&softcy;
+          </div>
+          <div class="stat-value" id="calorieStat">
+           1550 &kcy;&kcy;&acy;&lcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 2100 &kcy;&kcy;&acy;&lcy;
+          </div>
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="stat-icon blue">
+          ♧
+         </div>
+         <div>
+          <div class="stat-label">
+           &Vcy;&ocy;&dcy;&acy;
+          </div>
+          <div class="stat-value">
+           1.8 &lcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 2.5 &lcy;
+          </div>
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="stat-icon">
+          ◉
+         </div>
+         <div>
+          <div class="stat-label">
+           &ZHcy;&icy;&rcy;&ycy;
+          </div>
+          <div class="stat-value">
+           52 &gcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 70 &gcy;
+          </div>
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="stat-icon blue">
+          ❧
+         </div>
+         <div>
+          <div class="stat-label">
+           &Kcy;&lcy;&iecy;&tcy;&chcy;&acy;&tcy;&kcy;&acy;
+          </div>
+          <div class="stat-value">
+           18 &gcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 25 &gcy;
+          </div>
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="stat-icon orange">
+          ◇
+         </div>
+         <div>
+          <div class="stat-label">
+           &Scy;&acy;&khcy;&acy;&rcy;
+          </div>
+          <div class="stat-value">
+           28 &gcy;
+          </div>
+          <div class="stat-goal">
+           &icy;&zcy; 50 &gcy;
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+     <div class="section-head">
+      <h2>
+       &Pcy;&rcy;&icy;&iocy;&mcy;&ycy; &pcy;&icy;&shchcy;&icy;
+      </h2>
+      <button class="small-link" data-page="productsPage">
+       &Vcy;&scy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy; &rarr;
+      </button>
+     </div>
+     <div class="meal-row">
+      <article class="meal-card">
+       <div class="meal-emoji">
+        🥑
+       </div>
+       <div>
+        <strong>
+         &Zcy;&acy;&vcy;&tcy;&rcy;&acy;&kcy;
+        </strong>
+        <span>
+         &Acy;&vcy;&ocy;&kcy;&acy;&dcy;&ocy;-&tcy;&ocy;&scy;&tcy; &middot; 320 &kcy;&kcy;&acy;&lcy;
+        </span>
+       </div>
+      </article>
+      <article class="meal-card">
+       <div class="meal-emoji">
+        🥗
+       </div>
+       <div>
+        <strong>
+         &Ocy;&bcy;&iecy;&dcy;
+        </strong>
+        <span>
+         &Scy;&acy;&lcy;&acy;&tcy; &scy; &kcy;&icy;&ncy;&ocy;&acy; &middot; 480 &kcy;&kcy;&acy;&lcy;
+        </span>
+       </div>
+      </article>
+      <article class="meal-card">
+       <div class="meal-emoji">
+        🐟
+       </div>
+       <div>
+        <strong>
+         &Ucy;&zhcy;&icy;&ncy;
+        </strong>
+        <span>
+         &Lcy;&ocy;&scy;&ocy;&scy;&softcy; &scy; &ocy;&vcy;&ocy;&shchcy;&acy;&mcy;&icy; &middot; 620 &kcy;&kcy;&acy;&lcy;
+        </span>
+       </div>
+      </article>
+     </div>
+     <button class="quick-add" id="quickAdd">
+      <span>
+       🍽️　&Bcy;&ycy;&scy;&tcy;&rcy;&ocy;&iecy; &dcy;&ocy;&bcy;&acy;&vcy;&lcy;&iecy;&ncy;&icy;&iecy; &pcy;&rcy;&icy;&iocy;&mcy;&acy; &pcy;&icy;&shchcy;&icy;
+      </span>
+      <span>
+       ＋
+      </span>
+     </button>
+    </main>
+   </section>
+   <section class="page" id="productsPage">
+    <main class="main-shell">
+     <header class="topbar">
+      <div class="brand">
+       <svg aria-hidden="true" class="brand-mark" viewbox="0 0 48 48">
+        <path d="M24 43C10 40 2 29 5 17 7 8 16 4 23 10 30 1 43 8 44 19 45 31 36 40 24 43Z" fill="#718763">
+        </path>
+        <path d="M14 17c4-5 10-5 13-2M20 29c5 5 12 4 16-1" fill="none" stroke="#f7f4e5" stroke-linecap="round" stroke-width="2.7">
+        </path>
+       </svg>
+       Calora
+      </div>
+      <div class="top-actions">
+       <span class="hello">
+        &Tcy;&vcy;&ocy;&yacy; &icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy; &pcy;&icy;&tcy;&acy;&ncy;&icy;&yacy;
+       </span>
+       <button aria-label="&Vcy;&ycy;&jcy;&tcy;&icy;" class="icon-btn" id="logoutBtn2">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+         <path d="M10 17l5-5-5-5M15 12H3">
+         </path>
+         <path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6">
+         </path>
+        </svg>
+       </button>
+      </div>
+     </header>
+     <h1 class="page-title">
+      &Ocy;&tcy;&scy;&kcy;&acy;&ncy;&icy;&rcy;&ocy;&vcy;&acy;&ncy;&ncy;&ycy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;
+     </h1>
+     <p class="page-lead">
+      &Vcy;&scy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;, &kcy;&ocy;&tcy;&ocy;&rcy;&ycy;&iecy; &tcy;&ycy; &dcy;&ocy;&bcy;&acy;&vcy;&icy;&lcy; &vcy; &scy;&vcy;&ocy;&jcy; &dcy;&ncy;&iecy;&vcy;&ncy;&icy;&kcy; &pcy;&icy;&tcy;&acy;&ncy;&icy;&yacy;.
+     </p>
+     <div class="scan-toolbar">
+      <input class="search" id="productSearch" placeholder="&telrec;　&Pcy;&ocy;&icy;&scy;&kcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&acy;..." type="search"/>
+      <select aria-label="&Fcy;&icy;&lcy;&softcy;&tcy;&rcy;" class="filter-select" id="productFilter">
+       <option value="all">
+        &Vcy;&scy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;
+       </option>
+       <option value="meal">
+        &Dcy;&ocy;&bcy;&acy;&vcy;&lcy;&iecy;&ncy;&ncy;&ycy;&iecy; &vcy; &dcy;&ncy;&iecy;&vcy;&ncy;&icy;&kcy;
+       </option>
+       <option value="saved">
+        &Scy;&ocy;&khcy;&rcy;&acy;&ncy;&iocy;&ncy;&ncy;&ycy;&iecy;
+       </option>
+      </select>
+      <button class="primary-btn add-product-button" id="addProductBtn">
+       ＋ &Dcy;&ocy;&bcy;&acy;&vcy;&icy;&tcy;&softcy;
+      </button>
+     </div>
+     <div class="products-list" id="productsList">
+     </div>
+     <button class="quick-add" id="scanAdd">
+      <span>
+       📷　&Dcy;&ocy;&bcy;&acy;&vcy;&icy;&tcy;&softcy; &ncy;&ocy;&vcy;&ycy;&jcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;
+      </span>
+      <span>
+       ＋
+      </span>
+     </button>
+    </main>
+   </section>
+   <nav aria-label="&Ocy;&scy;&ncy;&ocy;&vcy;&ncy;&acy;&yacy; &ncy;&acy;&vcy;&icy;&gcy;&acy;&tscy;&icy;&yacy;" class="bottom-nav" id="bottomNav">
+    <button class="nav-btn active" data-page="dashboardPage">
+     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+      <path d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z">
+      </path>
+     </svg>
+     <span>
+      &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+     </span>
+    </button>
+    <button class="nav-btn" data-page="productsPage">
+     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+      <circle cx="12" cy="12" r="9">
+      </circle>
+      <path d="M12 6v6l4 2">
+      </path>
+     </svg>
+     <span>
+      &Pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&ycy;
+     </span>
+    </button>
+    <button aria-label="&Dcy;&ocy;&bcy;&acy;&vcy;&icy;&tcy;&softcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;" class="nav-btn nav-add" id="navAdd">
+     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+      <path d="M12 5v14M5 12h14">
+      </path>
+     </svg>
+    </button>
+    <button class="nav-btn" data-page="dashboardPage">
+     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+      <path d="M4 19V9h4v10M10 19V4h4v15M16 19v-7h4v7">
+      </path>
+     </svg>
+     <span>
+      &Acy;&ncy;&acy;&lcy;&icy;&tcy;&icy;&kcy;&acy;
+     </span>
+    </button>
+    <button class="nav-btn" id="profileBtn">
+     <svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+      <circle cx="12" cy="7" r="4">
+      </circle>
+      <path d="M4 21v-2a8 8 0 0 1 16 0v2z">
+      </path>
+     </svg>
+     <span>
+      &Pcy;&rcy;&ocy;&fcy;&icy;&lcy;&softcy;
+     </span>
+    </button>
+   </nav>
+   <div class="modal-backdrop" id="productModal">
+    <div class="modal">
+     <div class="modal-head">
+      <h2>
+       &Dcy;&ocy;&bcy;&acy;&vcy;&icy;&tcy;&softcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;
+      </h2>
+      <button aria-label="&Zcy;&acy;&kcy;&rcy;&ycy;&tcy;&softcy;" class="close-modal" id="closeModal">
+       &times;
+      </button>
+     </div>
+     <form id="productForm">
+      <label class="field">
+       <span>
+        &Ncy;&acy;&zcy;&vcy;&acy;&ncy;&icy;&iecy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;&acy;
+       </span>
+       <input id="newName" placeholder="&Ncy;&acy;&pcy;&rcy;&icy;&mcy;&iecy;&rcy;, &yacy;&bcy;&lcy;&ocy;&kcy;&ocy;" required=""/>
+      </label>
+      <div class="modal-grid">
+       <label class="field">
+        <span>
+         &Kcy;&acy;&lcy;&ocy;&rcy;&icy;&icy; (&kcy;&kcy;&acy;&lcy;)
+        </span>
+        <input id="newCalories" min="0" placeholder="95" required="" type="number"/>
+       </label>
+       <label class="field">
+        <span>
+         &Mcy;&acy;&scy;&scy;&acy; (&gcy;)
+        </span>
+        <input id="newWeight" min="1" required="" type="number" value="100"/>
+       </label>
+      </div>
+      <div class="modal-grid">
+       <label class="field">
+        <span>
+         &Bcy;&iecy;&lcy;&kcy;&icy; (&gcy;)
+        </span>
+        <input id="newProtein" min="0" step=".1" type="number" value="1"/>
+       </label>
+       <label class="field">
+        <span>
+         &ZHcy;&icy;&rcy;&ycy; (&gcy;)
+        </span>
+        <input id="newFat" min="0" step=".1" type="number" value="0"/>
+       </label>
+      </div>
+      <label class="field">
+       <span>
+        &Scy;&tcy;&acy;&tcy;&ucy;&scy;
+       </span>
+       <select id="newStatus">
+        <option value="meal">
+         &Dcy;&ocy;&bcy;&acy;&vcy;&icy;&tcy;&softcy; &vcy; &dcy;&ncy;&iecy;&vcy;&ncy;&icy;&kcy;
+        </option>
+        <option value="saved">
+         &Scy;&ocy;&khcy;&rcy;&acy;&ncy;&icy;&tcy;&softcy; &ncy;&acy; &pcy;&ocy;&tcy;&ocy;&mcy;
+        </option>
+       </select>
+      </label>
+      <button class="primary-btn" type="submit">
+       &Scy;&ocy;&khcy;&rcy;&acy;&ncy;&icy;&tcy;&softcy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tcy;
+      </button>
+     </form>
+    </div>
+   </div>
+   <div class="toast" id="toast" role="status">
+   </div>
+  </div>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>

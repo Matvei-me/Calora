@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4e5">
+  <title>Calora — главная панель</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <main class="main-shell">
+    <header class="topbar">
+      <a class="brand brand-small" href="dashboard.html">Calora</a>
+      <div class="top-actions"><span class="hello" id="helloText">Хорошего дня!</span><button class="secondary-btn" id="logoutBtn" type="button">Выйти</button></div>
+    </header>
+    <h1 class="page-title">Главная панель</h1>
+    <p class="page-lead">Твой баланс на сегодня. Маленькие шаги — большие результаты.</p>
+    <div class="dashboard-grid">
+      <section class="panel calorie-panel">
+        <div class="ring" id="calorieRing"><div class="ring-inner"><small>Осталось</small><strong id="remainingCalories">550 ккал</strong><span>из <b id="goalText">2100</b> ккал</span></div></div>
+        <div class="calorie-copy"><h2>Дневная норма</h2><p>Следи за энергией и выбирай продукты, которые помогают тебе чувствовать себя хорошо.</p><span class="tag" id="calorieTag">74% цели выполнено</span></div>
+      </section>
+      <section class="panel stats-panel">
+        <h2>Показатели за день</h2>
+        <div class="stats-grid">
+          <div class="stat-card"><div><div class="stat-label">Белки</div><div class="stat-value" id="proteinStat">75 г</div><div class="stat-goal">из 120 г</div></div></div>
+          <div class="stat-card"><div><div class="stat-label">Калорийность</div><div class="stat-value" id="calorieStat">1550 ккал</div><div class="stat-goal" id="calorieGoalStat">из 2100 ккал</div></div></div>
+          <div class="stat-card"><div><div class="stat-label">Вода</div><div class="stat-value">1,8 л</div><div class="stat-goal">из 2,5 л</div></div></div>
+          <div class="stat-card"><div><div class="stat-label">Жиры</div><div class="stat-value">52 г</div><div class="stat-goal">из 70 г</div></div></div>
+          <div class="stat-card"><div><div class="stat-label">Клетчатка</div><div class="stat-value">18 г</div><div class="stat-goal">из 25 г</div></div></div>
+          <div class="stat-card"><div><div class="stat-label">Сахар</div><div class="stat-value">28 г</div><div class="stat-goal">из 50 г</div></div></div>
+        </div>
+      </section>
+    </div>
+    <div class="section-head"><h2>Приёмы пищи</h2><a class="small-link" href="products.html">Все продукты</a></div>
+    <div class="meal-row">
+      <article class="meal-card"><strong>Завтрак</strong><span>Авокадо-тост · 320 ккал</span></article>
+      <article class="meal-card"><strong>Обед</strong><span>Салат с киноа · 480 ккал</span></article>
+      <article class="meal-card"><strong>Ужин</strong><span>Лосось с овощами · 620 ккал</span></article>
+    </div>
+    <a class="quick-add" href="products.html?add=1"><span>Быстрое добавление приёма пищи</span><span>Добавить</span></a>
+  </main>
+  <nav class="bottom-nav" aria-label="Основная навигация">
+    <a class="nav-btn active" href="dashboard.html">Главная</a>
+    <a class="nav-btn" href="products.html">Продукты</a>
+    <a class="nav-btn" href="products.html?add=1">Добавить</a>
+    <a class="nav-btn" href="dashboard.html#stats">Аналитика</a>
+    <button class="nav-btn" id="profileBtn" type="button">Профиль</button>
+  </nav>
+  <footer class="site-footer">
+    <p>Calora — питание под контролем</p>
+    <span>Твой ежедневный помощник в сбалансированном питании</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

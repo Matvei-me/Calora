@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4e5">
+  <title>Calora — продукты</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/products.js" defer></script>
+</head>
+<body>
+  <main class="main-shell">
+    <header class="topbar">
+      <a class="brand brand-small" href="dashboard.html">Calora</a>
+      <div class="top-actions"><span class="hello">Твоя история питания</span><button class="secondary-btn" id="logoutBtn" type="button">Выйти</button></div>
+    </header>
+    <h1 class="page-title">Отсканированные продукты</h1>
+    <p class="page-lead">Все продукты, которые ты добавил в свой дневник питания.</p>
+    <div class="scan-toolbar">
+      <input class="search" id="productSearch" placeholder="Поиск продукта..." type="search" aria-label="Поиск продукта">
+      <select class="filter-select" id="productFilter" aria-label="Фильтр">
+        <option value="all">Все продукты</option><option value="meal">Добавленные в дневник</option><option value="saved">Сохранённые</option>
+      </select>
+      <button class="primary-btn add-product-button" id="addProductBtn" type="button">Добавить</button>
+    </div>
+    <div class="products-list" id="productsList"></div>
+    <button class="quick-add" id="scanAdd" type="button"><span>Добавить новый продукт</span><span>Добавить</span></button>
+  </main>
+  <nav class="bottom-nav" aria-label="Основная навигация">
+    <a class="nav-btn" href="dashboard.html">Главная</a>
+    <a class="nav-btn active" href="products.html">Продукты</a>
+    <a class="nav-btn" href="products.html?add=1">Добавить</a>
+    <a class="nav-btn" href="dashboard.html#stats">Аналитика</a>
+    <button class="nav-btn" id="profileBtn" type="button">Профиль</button>
+  </nav>
+  <div class="modal-backdrop" id="productModal">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <div class="modal-head"><h2 id="productModalTitle">Добавить продукт</h2><button class="close-modal" id="closeModal" type="button">Закрыть</button></div>
+      <form id="productForm">
+        <label class="field"><span>Название продукта</span><input id="newName" placeholder="Например, яблоко" required></label>
+        <div class="modal-grid">
+          <label class="field"><span>Калории (ккал)</span><input id="newCalories" min="0" placeholder="95" required type="number"></label>
+          <label class="field"><span>Масса (г)</span><input id="newWeight" min="1" required type="number" value="100"></label>
+        </div>
+        <div class="modal-grid">
+          <label class="field"><span>Белки (г)</span><input id="newProtein" min="0" step="0.1" type="number" value="1"></label>
+          <label class="field"><span>Жиры (г)</span><input id="newFat" min="0" step="0.1" type="number" value="0"></label>
+        </div>
+        <label class="field"><span>Статус</span><select id="newStatus"><option value="meal">Добавить в дневник</option><option value="saved">Сохранить на потом</option></select></label>
+        <button class="primary-btn" type="submit">Сохранить продукт</button>
+      </form>
+    </section>
+  </div>
+  <footer class="site-footer">
+    <p>Calora — питание под контролем</p>
+    <span>Твой ежедневный помощник в сбалансированном питании</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
